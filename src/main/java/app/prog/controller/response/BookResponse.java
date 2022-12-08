@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 public class BookResponse {
-    private Long id;
+    private int id;
     private String author;
     private String title;
     private boolean hasAuthor;
