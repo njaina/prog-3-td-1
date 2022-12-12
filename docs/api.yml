@@ -90,12 +90,16 @@ components:
     Book:
       type: object
       properties:
-        id:
-          type: integer
         hasAuthor:
           type: boolean
       allOf:
+        - $ref: '#/components/schemas/BookModel'
+    BookModel:
+      allOf:
         - $ref: '#/components/schemas/CreateBook'
+      properties:
+        id:
+          type: integer
     CreateBook:
       type: object
       properties:
