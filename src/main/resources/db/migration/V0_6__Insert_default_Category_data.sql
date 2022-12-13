@@ -1,3 +1,3 @@
-insert into author (name) values
+insert into category (name) values
 ('comedie'),
 ('fiction');
