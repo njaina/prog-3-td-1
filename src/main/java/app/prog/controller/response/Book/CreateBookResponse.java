@@ -1,5 +1,6 @@
 package app.prog.controller.response.Book;
 
+import app.prog.controller.response.Author.CreateAuthorResponse;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,6 +9,6 @@ import lombok.Data;
 @Data
 @Builder
 public class CreateBookResponse {
-    private String author;
+    private CreateAuthorResponse author;
     private String title;
 }

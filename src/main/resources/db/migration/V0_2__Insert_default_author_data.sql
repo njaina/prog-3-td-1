@@ -1,2 +1,3 @@
 insert into author (name, particularity,birthdate) values
-('name','test',null);
+('name','test',null),
+('scd','test',null);

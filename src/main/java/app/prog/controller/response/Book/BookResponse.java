@@ -1,5 +1,6 @@
 package app.prog.controller.response.Book;
 
+import app.prog.model.AuthorEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
