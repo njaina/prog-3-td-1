@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,5 +21,7 @@ public class AuthorEntity {
     private String name;
     private String particularity;
     private Date birthdate;
+    @OneToMany(mappedBy = "author")
+    private List<BookEntity> books;
     public boolean hasParticularity(){return particularity != null;}
 }

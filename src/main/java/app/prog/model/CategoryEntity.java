@@ -13,11 +13,11 @@ import java.util.Set;
 @Entity
 @Table(name = "category")
 
-public class Category {
+public class CategoryEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private int id;
     private String name;
-    @ManyToMany
-    Set<BookEntity> 
+    @ManyToMany(mappedBy = "category")
+    Set<BookEntity> book;
 }
